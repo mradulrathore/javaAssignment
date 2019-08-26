@@ -3,9 +3,15 @@ import java.util.Scanner;
 class Employee{
 	 protected String doj;
 	 protected float salary;
+	 protected float leaves;
+	 public Employee(){
+	 	System.out.println("Enter the Date of Joining and leaves taken per year");
+	 	Scanner sc=new Scanner(System.in);
+	 	doj=sc.nextLine();
+	 	leaves=sc.nextFloat();
+	 }
 
 }
-
 class Manager extends Employee{
 	public Manager(){
 		salary=1200000f;
@@ -45,7 +51,6 @@ class Tester extends Engineer{
 		Hike=0.1f
 }
 }
-	
 class Architect extends Engineer{
 	public Architect(){
 		salary=1200000f;
@@ -77,11 +82,13 @@ class Cloud extends Researcher{
 		L=3f;
 		Hike=0.4f;	
 	}
+
 }
 
 class Run{
 	public static void main(String args[])
 	{
+		Manager m_obj=new Manager();
 
 	}
 }
