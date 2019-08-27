@@ -23,6 +23,11 @@ class HR extends Manager{
 	public HR(){
 		L=2.5f;
 		Hike=0.2f;
+		if(leaves<=L)
+			{	salary+=Hike*salary;
+
+			}
+		System.out.println("Salary: "+salary/12);
 	}
 
 }
@@ -30,6 +35,11 @@ class Technology extends Manager{
 	public Technology(){
 		L=2.5f;
 		Hike=0.3f;
+		if(leaves<=L)
+			{	salary+=Hike*salary;
+
+			}
+		System.out.println("Salary: "+salary/12);
 	}	
 }
 
@@ -42,13 +52,23 @@ class Developer extends Engineer{
 		salary=1000000f;
 		L=3f;
 		Hike=0.1f;
+		if(leaves<=L)
+			{	salary+=Hike*salary;
+
+			}
+		System.out.println("Salary: "+salary/12);
 	}
 }
 class Tester extends Engineer{
 	public Tester(){
 		salary=600000f;
 		L=2.5f;
-		Hike=0.1f
+		Hike=0.1f;
+		if(leaves<=L)
+			{	salary+=Hike*salary;
+
+			}
+		System.out.println("Salary: "+salary/12);
 }
 }
 class Architect extends Engineer{
@@ -56,6 +76,11 @@ class Architect extends Engineer{
 		salary=1200000f;
 		L=4f;
 		Hike=0.5f;
+		if(leaves<=L)
+			{	salary+=Hike*salary;
+
+			}
+		System.out.println("Salary: "+salary/12);
 	}
 }
 
@@ -69,18 +94,33 @@ class DataScientist extends Researcher{
 	public DataScientist(){
 		L=4f;
 		Hike=0.5f;
+		if(leaves<=L)
+			{	salary+=Hike*salary;
+
+			}
+		System.out.println("Salary: "+salary/12);
 	}
 }
 class Analytics extends Researcher{
 	public Analytics(){
 		L=3f;
 		Hike=0.4f;
+		if(leaves<=L)
+			{	salary+=Hike*salary;
+
+			}
+		System.out.println("Salary: "+salary/12);
 	}
 }
 class Cloud extends Researcher{
 	public Cloud(){
 		L=3f;
 		Hike=0.4f;	
+		if(leaves<=L)
+			{	salary+=Hike*salary;
+
+			}
+		System.out.println("Salary: "+salary/12);
 	}
 
 }
@@ -88,7 +128,8 @@ class Cloud extends Researcher{
 class Run{
 	public static void main(String args[])
 	{
-		Manager m_obj=new Manager();
+		HR m_obj=new HR();
+		
 
 	}
 }
